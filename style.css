@@ -1,0 +1,134 @@
+/* Base resets & typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Colour palette (drawn from profile image) */
+:root {
+  --brand-dark: #0f1a2e;    /* deep navy/charcoal */
+  --brand-accent: #c9a17a;  /* muted gold/tan */
+  --brand-light: #f5f4f2;   /* very light neutral */
+  --brand-text: #333333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+/* Hero section */
+.header .hero,
+.hero {
+  position: relative;
+  height: 70vh;
+  background: url('assets/hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero__overlay {
+  background: rgba(0,0,0,0.5);
+  padding: 0 20px;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero__subtitle {
+  font-size: 1.4rem;
+}
+
+/* About section */
+.about {
+  background: var(--brand-light);
+  color: var(--brand-dark);
+}
+
+.about h2 {
+  text-align: center;
+  color: var(--brand-dark);
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Gallery section */
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--brand-dark);
+}
+
+.gallery__grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.gallery__item img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Contact section */
+.contact {
+  text-align: center;
+  color: var(--brand-dark);
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: var(--brand-accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #b38b6d;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--brand-dark);
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
